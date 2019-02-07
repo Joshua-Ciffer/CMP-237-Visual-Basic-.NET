@@ -85,11 +85,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
     </Compile>
-    <Compile Include="My Project\Resources.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="My Project\Settings.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -97,9 +92,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -115,6 +112,24 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1200px-Myrtle_Beach_ferris_wheel[1].jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ee96f6ac-b184-49e3-a9d5-42c1a54e57e1.hw1[1].jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VeniceBeach_JenJudge_1280x642[1].jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\keyWest.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\myrtleBeach.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\veniceBeach.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
