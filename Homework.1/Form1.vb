@@ -20,18 +20,27 @@ Public Class Form1
 		End If
 	End Sub
 
-	Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles pictureBox.Click
+	Private Sub veniceBeachRadioButton_CheckedChanged(sender As Object, e As EventArgs) Handles veniceBeachRadioButton.CheckedChanged
 		If veniceBeachRadioButton.Checked = True Then
-			pictureBox.Image = Homework._1.Resources.veniceBeach.jpg
-			pictureBox.Visible = True
-		ElseIf keyWestRadioButton.Checked = True Then
-			pictureBox.Image = Image.FromFile(Properties.Resources.keyWest.jpg)
-			pictureBox.Visible = True
-		ElseIf myrtleBeachRadioButton.Checked = True Then
-			pictureBox.Image = Image.FromFile("Homework.1\Resources\myrtleBeach.jpg")
-			pictureBox.Visible = True
-		Else
-			pictureBox.Visible = False
+			veniceBeachPictureBox.Visible = True
+			myrtleBeachPictureBox.Visible = False
+			keyWestPictureBox.Visible = False
+		End If
+	End Sub
+
+	Private Sub keyWestRadioButton_CheckedChanged(sender As Object, e As EventArgs) Handles keyWestRadioButton.CheckedChanged
+		If keyWestRadioButton.Checked = True Then
+			keyWestPictureBox.Visible = True
+			myrtleBeachPictureBox.Visible = False
+			veniceBeachPictureBox.Visible = False
+		End If
+	End Sub
+
+	Private Sub myrtleBeachRadioButton_CheckedChanged(sender As Object, e As EventArgs) Handles myrtleBeachRadioButton.CheckedChanged
+		If myrtleBeachRadioButton.Checked = True Then
+			myrtleBeachPictureBox.Visible = True
+			keyWestPictureBox.Visible = False
+			veniceBeachPictureBox.Visible = False
 		End If
 	End Sub
 

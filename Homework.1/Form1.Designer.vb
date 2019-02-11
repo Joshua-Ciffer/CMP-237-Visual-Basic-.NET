@@ -24,12 +24,16 @@ Partial Class Form1
     Private Sub InitializeComponent()
 		Me.bookTripButton = New System.Windows.Forms.Button()
 		Me.radioButtonGroupBox = New System.Windows.Forms.GroupBox()
-		Me.myrtleBeachRadioButton = New System.Windows.Forms.RadioButton()
-		Me.keyWestRadioButton = New System.Windows.Forms.RadioButton()
 		Me.veniceBeachRadioButton = New System.Windows.Forms.RadioButton()
-		Me.pictureBox = New System.Windows.Forms.PictureBox()
+		Me.keyWestRadioButton = New System.Windows.Forms.RadioButton()
+		Me.myrtleBeachRadioButton = New System.Windows.Forms.RadioButton()
+		Me.veniceBeachPictureBox = New System.Windows.Forms.PictureBox()
+		Me.keyWestPictureBox = New System.Windows.Forms.PictureBox()
+		Me.myrtleBeachPictureBox = New System.Windows.Forms.PictureBox()
 		Me.radioButtonGroupBox.SuspendLayout()
-		CType(Me.pictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
+		CType(Me.veniceBeachPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
+		CType(Me.keyWestPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
+		CType(Me.myrtleBeachPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
 		Me.SuspendLayout()
 		'
 		'bookTripButton
@@ -53,17 +57,17 @@ Partial Class Form1
 		Me.radioButtonGroupBox.TabIndex = 2
 		Me.radioButtonGroupBox.TabStop = False
 		'
-		'myrtleBeachRadioButton
+		'veniceBeachRadioButton
 		'
-		Me.myrtleBeachRadioButton.AutoSize = True
-		Me.myrtleBeachRadioButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.1!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-		Me.myrtleBeachRadioButton.Location = New System.Drawing.Point(42, 61)
-		Me.myrtleBeachRadioButton.Name = "myrtleBeachRadioButton"
-		Me.myrtleBeachRadioButton.Size = New System.Drawing.Size(341, 59)
-		Me.myrtleBeachRadioButton.TabIndex = 0
-		Me.myrtleBeachRadioButton.TabStop = True
-		Me.myrtleBeachRadioButton.Text = "Myrtle Beach"
-		Me.myrtleBeachRadioButton.UseVisualStyleBackColor = True
+		Me.veniceBeachRadioButton.AutoSize = True
+		Me.veniceBeachRadioButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.1!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.veniceBeachRadioButton.Location = New System.Drawing.Point(767, 61)
+		Me.veniceBeachRadioButton.Name = "veniceBeachRadioButton"
+		Me.veniceBeachRadioButton.Size = New System.Drawing.Size(358, 59)
+		Me.veniceBeachRadioButton.TabIndex = 2
+		Me.veniceBeachRadioButton.TabStop = True
+		Me.veniceBeachRadioButton.Text = "Venice Beach"
+		Me.veniceBeachRadioButton.UseVisualStyleBackColor = True
 		'
 		'keyWestRadioButton
 		'
@@ -77,39 +81,68 @@ Partial Class Form1
 		Me.keyWestRadioButton.Text = "Key West"
 		Me.keyWestRadioButton.UseVisualStyleBackColor = True
 		'
-		'veniceBeachRadioButton
+		'myrtleBeachRadioButton
 		'
-		Me.veniceBeachRadioButton.AutoSize = True
-		Me.veniceBeachRadioButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.1!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-		Me.veniceBeachRadioButton.Location = New System.Drawing.Point(767, 61)
-		Me.veniceBeachRadioButton.Name = "veniceBeachRadioButton"
-		Me.veniceBeachRadioButton.Size = New System.Drawing.Size(358, 59)
-		Me.veniceBeachRadioButton.TabIndex = 2
-		Me.veniceBeachRadioButton.TabStop = True
-		Me.veniceBeachRadioButton.Text = "Venice Beach"
-		Me.veniceBeachRadioButton.UseVisualStyleBackColor = True
+		Me.myrtleBeachRadioButton.AutoSize = True
+		Me.myrtleBeachRadioButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.1!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+		Me.myrtleBeachRadioButton.Location = New System.Drawing.Point(42, 61)
+		Me.myrtleBeachRadioButton.Name = "myrtleBeachRadioButton"
+		Me.myrtleBeachRadioButton.Size = New System.Drawing.Size(341, 59)
+		Me.myrtleBeachRadioButton.TabIndex = 0
+		Me.myrtleBeachRadioButton.TabStop = True
+		Me.myrtleBeachRadioButton.Text = "Myrtle Beach"
+		Me.myrtleBeachRadioButton.UseVisualStyleBackColor = True
 		'
-		'pictureBox
+		'veniceBeachPictureBox
 		'
-		Me.pictureBox.Location = New System.Drawing.Point(29, 30)
-		Me.pictureBox.Name = "pictureBox"
-		Me.pictureBox.Size = New System.Drawing.Size(1120, 505)
-		Me.pictureBox.TabIndex = 3
-		Me.pictureBox.TabStop = False
+		Me.veniceBeachPictureBox.Image = Global.Homework._1.My.Resources.Resources.veniceBeach
+		Me.veniceBeachPictureBox.Location = New System.Drawing.Point(782, 30)
+		Me.veniceBeachPictureBox.Name = "veniceBeachPictureBox"
+		Me.veniceBeachPictureBox.Size = New System.Drawing.Size(376, 505)
+		Me.veniceBeachPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+		Me.veniceBeachPictureBox.TabIndex = 5
+		Me.veniceBeachPictureBox.TabStop = False
+		Me.veniceBeachPictureBox.Visible = False
+		'
+		'keyWestPictureBox
+		'
+		Me.keyWestPictureBox.Image = Global.Homework._1.My.Resources.Resources.keyWest
+		Me.keyWestPictureBox.Location = New System.Drawing.Point(412, 30)
+		Me.keyWestPictureBox.Name = "keyWestPictureBox"
+		Me.keyWestPictureBox.Size = New System.Drawing.Size(345, 505)
+		Me.keyWestPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+		Me.keyWestPictureBox.TabIndex = 4
+		Me.keyWestPictureBox.TabStop = False
+		Me.keyWestPictureBox.Visible = False
+		'
+		'myrtleBeachPictureBox
+		'
+		Me.myrtleBeachPictureBox.Image = Global.Homework._1.My.Resources.Resources.myrtleBeach
+		Me.myrtleBeachPictureBox.Location = New System.Drawing.Point(29, 30)
+		Me.myrtleBeachPictureBox.Name = "myrtleBeachPictureBox"
+		Me.myrtleBeachPictureBox.Size = New System.Drawing.Size(356, 505)
+		Me.myrtleBeachPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+		Me.myrtleBeachPictureBox.TabIndex = 3
+		Me.myrtleBeachPictureBox.TabStop = False
+		Me.myrtleBeachPictureBox.Visible = False
 		'
 		'Form1
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(16.0!, 31.0!)
 		Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-		Me.ClientSize = New System.Drawing.Size(1185, 885)
-		Me.Controls.Add(Me.pictureBox)
+		Me.ClientSize = New System.Drawing.Size(1236, 1000)
+		Me.Controls.Add(Me.veniceBeachPictureBox)
+		Me.Controls.Add(Me.keyWestPictureBox)
+		Me.Controls.Add(Me.myrtleBeachPictureBox)
 		Me.Controls.Add(Me.radioButtonGroupBox)
 		Me.Controls.Add(Me.bookTripButton)
 		Me.Name = "Form1"
 		Me.Text = "Spring Break Travel Specials"
 		Me.radioButtonGroupBox.ResumeLayout(False)
 		Me.radioButtonGroupBox.PerformLayout()
-		CType(Me.pictureBox, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.veniceBeachPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.keyWestPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
+		CType(Me.myrtleBeachPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
 		Me.ResumeLayout(False)
 
 	End Sub
@@ -119,5 +152,7 @@ Partial Class Form1
 	Friend WithEvents veniceBeachRadioButton As RadioButton
 	Friend WithEvents keyWestRadioButton As RadioButton
 	Friend WithEvents myrtleBeachRadioButton As RadioButton
-	Friend WithEvents pictureBox As PictureBox
+	Friend WithEvents myrtleBeachPictureBox As PictureBox
+	Friend WithEvents keyWestPictureBox As PictureBox
+	Friend WithEvents veniceBeachPictureBox As PictureBox
 End Class
