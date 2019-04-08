@@ -74,6 +74,7 @@ Partial Class Form1
 		Me.clearButton = New System.Windows.Forms.Button()
 		Me.saveButton = New System.Windows.Forms.Button()
 		Me.calculateButton = New System.Windows.Forms.Button()
+		Me.PictureBox1 = New System.Windows.Forms.PictureBox()
 		Me.TabControl1.SuspendLayout()
 		Me.TabPage1.SuspendLayout()
 		Me.TabPage2.SuspendLayout()
@@ -84,6 +85,7 @@ Partial Class Form1
 		Me.carGarageGroupBox.SuspendLayout()
 		Me.numBedroomsGroupBox.SuspendLayout()
 		Me.TabPage3.SuspendLayout()
+		CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
 		Me.SuspendLayout()
 		'
 		'TabControl1
@@ -99,6 +101,7 @@ Partial Class Form1
 		'
 		'TabPage1
 		'
+		Me.TabPage1.Controls.Add(Me.PictureBox1)
 		Me.TabPage1.Controls.Add(Me.squareFootageTextBox)
 		Me.TabPage1.Controls.Add(Me.squareFootageLabel)
 		Me.TabPage1.Controls.Add(Me.cityTextBox)
@@ -650,11 +653,21 @@ Partial Class Form1
 		Me.calculateButton.Text = "Calculate"
 		Me.calculateButton.UseVisualStyleBackColor = True
 		'
+		'PictureBox1
+		'
+		Me.PictureBox1.Image = Global.Final_Project.My.Resources.Resources.home_buying_course_1_
+		Me.PictureBox1.Location = New System.Drawing.Point(184, 458)
+		Me.PictureBox1.Name = "PictureBox1"
+		Me.PictureBox1.Size = New System.Drawing.Size(696, 383)
+		Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+		Me.PictureBox1.TabIndex = 8
+		Me.PictureBox1.TabStop = False
+		'
 		'Form1
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(16.0!, 31.0!)
 		Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-		Me.ClientSize = New System.Drawing.Size(1398, 1079)
+		Me.ClientSize = New System.Drawing.Size(1414, 1313)
 		Me.Controls.Add(Me.TabControl1)
 		Me.Name = "Form1"
 		Me.Text = "Custom Home System"
@@ -677,6 +690,7 @@ Partial Class Form1
 		Me.numBedroomsGroupBox.PerformLayout()
 		Me.TabPage3.ResumeLayout(False)
 		Me.TabPage3.PerformLayout()
+		CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
 		Me.ResumeLayout(False)
 
 	End Sub
@@ -733,4 +747,5 @@ Partial Class Form1
 	Friend WithEvents clearButton As Button
 	Friend WithEvents saveButton As Button
 	Friend WithEvents calculateButton As Button
+	Friend WithEvents PictureBox1 As PictureBox
 End Class
