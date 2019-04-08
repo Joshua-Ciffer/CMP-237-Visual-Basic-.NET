@@ -1,0 +1,10 @@
+San Francisco,4570
+New York City,4310
+Boston,3200
+Jersey City,3200
+Washington D.C.,3000
+Los Angeles,2600
+San Jose,2580
+Stamford,2450
+Miami,2400
+Seattle,2210
